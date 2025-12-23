@@ -40,6 +40,21 @@
         .btn { display: block; background: var(--accent-color); color: white; text-align: center; padding: 15px; 
                text-decoration: none; border-radius: 30px; font-size: 1.1rem; transition: 0.3s; font-weight: bold; cursor: pointer;}
         
+        /* 地圖按鈕樣式 (新增) */
+        .map-btn {
+            display: inline-block;
+            margin-top: 8px;
+            color: #d4a373;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #d4a373;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .map-btn:hover { background-color: #d4a373; color: white; }
+
         /* 不同按鈕的顏色 */
         .btn-line { background: #06c755; } /* Line 綠色 */
         .btn-ig { background: #8a3ab9; }   /* IG 紫色 */
@@ -76,7 +91,9 @@
     <section>
         <h2>📍 地點與時間</h2>
         <p>工作室位置：屏東縣東港鎮（7-11 大鵬灣門市附近）</p>
-        <p>操作時間：約 3-4 小時（新手細心操作，請預留充足時間）</p>
+        <a href="https://maps.app.goo.gl/zBrmYfhADeaq59h39" target="_blank" class="map-btn">🗺️ 開啟 Google Maps 導航</a>
+        
+        <p style="margin-top: 15px;">操作時間：約 3-4 小時（新手細心操作，請預留充足時間）</p>
     </section>
 
     <section>
