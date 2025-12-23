@@ -3,57 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hannah Nail 漢娜美甲 | 東港美甲工作室</title>
+    <title>Hannah Nail - 東港美甲工作室</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         :root {
             --primary-color: #f8d7da;
             --text-color: #4a4a4a;
             --accent-color: #d4a373;
-            --bg-color: #fdfaf9;
         }
-        body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; color: var(--text-color); line-height: 1.6; background-color: #fff; }
-        header { background: #fff; padding: 50px 20px 20px; text-align: center; }
-        .container { max-width: 800px; margin: auto; padding: 0 20px 50px; }
+        body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; color: var(--text-color); line-height: 1.6; }
+        header { background: #fff; padding: 50px 20px; text-align: center; border-bottom: 1px solid #eee; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        h1 { letter-spacing: 3px; color: var(--accent-color); margin-bottom: 10px; }
+        .sub-header { font-size: 0.9rem; color: #888; margin-bottom: 15px; }
+        .ig-link { color: #8a3ab9; text-decoration: none; font-weight: bold; }
         
-        h1 { font-size: 2.2rem; letter-spacing: 5px; color: var(--accent-color); margin: 0; }
-        .sub-header { font-size: 0.95rem; color: #888; margin: 10px 0 15px; letter-spacing: 1px; }
-        .ig-id { color: #8a3ab9; text-decoration: none; font-weight: bold; border-bottom: 1px solid #8a3ab9; }
-        
-        section { margin-top: 40px; }
-        h2 { font-size: 1.2rem; border-bottom: 2px solid var(--primary-color); padding-bottom: 8px; margin-bottom: 20px; }
-        
-        /* 輪播圖樣式 */
-        .swiper { width: 100%; height: 450px; border-radius: 15px; background: #eee; }
+        /* 區塊樣式 */
+        .price-card { background: #fdfaf9; border-radius: 15px; padding: 25px; margin: 20px 0; border-left: 5px solid var(--primary-color); }
+        .promo { color: #e63946; font-weight: bold; margin-top: 10px; border-top: 1px dashed #f8d7da; padding-top: 10px; }
+
+        /* 按鈕樣式 */
+        .btn { display: block; background: var(--accent-color); color: white; text-align: center; padding: 15px; 
+               text-decoration: none; border-radius: 30px; margin: 15px 0; font-size: 1.1rem; transition: 0.3s; font-weight: bold; }
+        .btn-line { background: #06c755; }
+        .btn:hover { opacity: 0.8; }
+
+        /* 輪播圖區塊 */
+        .swiper { width: 100%; aspect-ratio: 1/1; border-radius: 15px; margin-top: 20px; background: #eee; }
         .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
-
-        /* 價格卡片 */
-        .price-card { background: var(--bg-color); border-radius: 20px; padding: 25px; border: 1px solid #eee; }
-        .price-main { display: flex; justify-content: space-between; align-items: center; font-size: 1.5rem; font-weight: bold; }
-        .price-detail { font-size: 0.95rem; color: #666; margin: 15px 0; line-height: 1.8; }
-        .promo-box { background: #fff1f2; color: #e63946; padding: 15px; border-radius: 12px; font-weight: bold; border: 1px dashed #ffb1b8; text-align: center; }
-        .promo-highlight { font-size: 1.4rem; text-decoration: underline; }
-
-        /* 預約按鈕區 */
-        .booking-group { display: flex; flex-direction: column; gap: 12px; margin-top: 15px; }
-        .btn { display: block; text-align: center; padding: 16px; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: bold; transition: 0.3s; }
-        .btn-line { background: #06c755; color: white; }
-        .btn-ig { background: #8a3ab9; color: white; }
-        .btn-form { background: var(--accent-color); color: white; }
-        .btn:hover { opacity: 0.8; transform: scale(1.02); }
-
-        footer { text-align: center; padding: 40px; font-size: 0.8rem; color: #bbb; }
+        
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #999; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Hannah Nail</h1>
-    <div class="sub-header">東港美甲工作室 | 東港美甲推薦 | 便宜美甲</div>
-    <a href="https://www.instagram.com/hannah_0238" class="ig-id">IG: hannah_0238</a>
+    <h1>東港美甲工作室</h1>
+    <div class="sub-header">東港美甲 | 東港美甲推薦 | 便宜美甲</div>
+    <a href="https://www.instagram.com/hannah_0238" class="ig-link">IG: hannah_0238</a>
 </header>
 
 <div class="container">
+    <section>
+        <h2>✨ 新人作品集募集優惠</h2>
+        <div class="price-card">
+            <h3>不限款式光療 <span style="float:right;">$600</span></h3>
+            <p>• ⚠️ <strong>不能延甲</strong><br>
+               • 包含基礎保養（卸甲另加 $100）</p>
+            <p class="promo">📢 IG 公開分享回饋：現折 $100！<br>
+               👉 等於 $500 就能搞定！</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>📍 地點與時間</h2>
+        <p>工作室位置：屏東縣東港鎮（7-11 大鵬灣門市附近）</p>
+        <p>操作時間：約 3-4 小時（新手細心操作，請預留充足時間）</p>
+    </section>
+
+    <section>
+        <h2>📅 預約方式</h2>
+        <a href="https://line.me/ti/p/A0bpLHv0Ev" class="btn btn-line">1. Line 預約（快速聯繫）</a>
+        <a href="https://reurl.cc/8b9E5g" class="btn">2. 填寫預約表單</a>
+    </section>
+
     <section>
         <h2>📸 作品參考</h2>
         <div class="swiper mySwiper">
@@ -64,17 +77,22 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <div style="margin-top:15px;">
-            <a href="https://www.instagram.com/hannah_0238" class="btn btn-ig">前往 IG 查看更多作品</a>
-        </div>
+        <a href="https://www.instagram.com/hannah_0238" class="btn" style="background: #8a3ab9;">前往 IG 查看更多作品</a>
     </section>
+</div>
 
-    <section>
-        <h2>✨ 新人作品集募集優惠</h2>
-        <div class="price-card">
-            <div class="price-main">
-                <span>不限款式光療</span>
-                <span style="color: var(--accent-color);">$600</span>
-            </div>
-            <div class="price-detail">
-                • ⚠️ <strong>不能延甲</strong><br>
+<footer>
+    &copy; 2025 Hannah Nail Studio. All Rights Reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: { delay: 3000, disableOnInteraction: false },
+        pagination: { el: ".swiper-pagination", clickable: true },
+    });
+</script>
+
+</body>
+</html>
