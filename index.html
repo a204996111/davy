@@ -23,10 +23,16 @@
         .promo { color: #e63946; font-weight: bold; margin-top: 10px; border-top: 1px dashed #f8d7da; padding-top: 10px; }
 
         /* 按鈕樣式 */
+        .booking-group { display: flex; flex-direction: column; gap: 15px; margin-top: 15px; }
         .btn { display: block; background: var(--accent-color); color: white; text-align: center; padding: 15px; 
-               text-decoration: none; border-radius: 30px; margin: 15px 0; font-size: 1.1rem; transition: 0.3s; font-weight: bold; }
-        .btn-line { background: #06c755; }
-        .btn:hover { opacity: 0.8; }
+               text-decoration: none; border-radius: 30px; font-size: 1.1rem; transition: 0.3s; font-weight: bold; }
+        
+        /* 不同按鈕的顏色 */
+        .btn-line { background: #06c755; } /* Line 綠色 */
+        .btn-ig { background: #8a3ab9; }   /* IG 紫色 */
+        .btn-form { background: #d4a373; } /* 表單 金色 */
+
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
         /* 輪播圖區塊 */
         .swiper { width: 100%; aspect-ratio: 1/1; border-radius: 15px; margin-top: 20px; background: #eee; }
@@ -47,9 +53,8 @@
     <section>
         <h2>✨ 新人作品集募集優惠</h2>
         <div class="price-card">
-            <h3>不限款式光療 <span style="float:right;">$600</span></h3>
-            <p>• ⚠️ <strong>不能延甲</strong><br>
-               • 包含基礎保養（卸甲另加 $100）</p>
+            <h3>不限款式(不能延甲) <span style="float:right;">$600</span></h3>
+            <p>• ⚠️ <strong>卸甲+$100</strong><br>   
             <p class="promo">📢 IG 公開分享回饋：現折 $100！<br>
                👉 等於 $500 就能搞定！</p>
         </div>
@@ -63,8 +68,11 @@
 
     <section>
         <h2>📅 預約方式</h2>
-        <a href="https://line.me/ti/p/A0bpLHv0Ev" class="btn btn-line">1. Line 預約（快速聯繫）</a>
-        <a href="https://reurl.cc/8b9E5g" class="btn">2. 填寫預約表單</a>
+        <div class="booking-group">
+            <a href="https://line.me/ti/p/A0bpLHv0Ev" class="btn btn-line">1. Line 預約（快速聯繫）</a>
+            <a href="https://www.instagram.com/hannah_0238" class="btn btn-ig">2. IG 私訊預約</a>
+            <a href="https://reurl.cc/8b9E5g" class="btn btn-form">3. 填寫預約表單</a>
+        </div>
     </section>
 
     <section>
@@ -74,21 +82,10 @@
                 <div class="swiper-slide"><img src="1.jpg" alt="作品1"></div>
                 <div class="swiper-slide"><img src="2.jpg" alt="作品2"></div>
                 <div class="swiper-slide"><img src="3.jpg" alt="作品3"></div>
-                <div class="swiper-slide"><img src="4.jpg" alt="作品4"></div>
-                <div class="swiper-slide"><img src="5.jpg" alt="作品5"></div>
-                <div class="swiper-slide"><img src="6.jpg" alt="作品6"></div>
-                <div class="swiper-slide"><img src="7.jpg" alt="作品7"></div>
-                <div class="swiper-slide"><img src="8.jpg" alt="作品8"></div>
-                <div class="swiper-slide"><img src="9.jpg" alt="作品9"></div>
-                <div class="swiper-slide"><img src="10.jpg" alt="作品10"></div>
-                <div class="swiper-slide"><img src="11.jpg" alt="作品11"></div>
-                <div class="swiper-slide"><img src="12.jpg" alt="作品12"></div>
-                <div class="swiper-slide"><img src="13.jpg" alt="作品13"></div>
-                <div class="swiper-slide"><img src="14.jpg" alt="作品14"></div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <a href="https://www.instagram.com/hannah_0238" class="btn" style="background: #8a3ab9;">前往 IG 查看更多作品</a>
+        <a href="https://www.instagram.com/hannah_0238" class="btn" style="background: #eee; color: #666; font-size: 0.9rem;">前往 IG 查看更多作品</a>
     </section>
 </div>
 
@@ -107,4 +104,3 @@
 
 </body>
 </html>
-
